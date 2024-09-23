@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress
+spec:
+#  tls:
+#  - hosts:
+#    -  carmelwordpress.com
+  rules:
+#    - host: carmelwordpress.com
+    - http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: wordpress
+                port:
+                  number: 8080
+          - pathType: Prefix
+            path: /db
+            backend:
+              service:
+                name: mariadb
+                port:
+                  number: 8080
