@@ -38,3 +38,7 @@ chmod 700 get_helm.sh
 ## installing NGINX Ingress Controller using Helm
 ### source: https://platform9.com/learn/v1.0/tutorials/helm-cli
 
+helm repo add nginx-stable https://helm.nginx.com/stable
+
+helm repo update
+
