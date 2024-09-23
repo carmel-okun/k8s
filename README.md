@@ -47,3 +47,7 @@ helm install nginx-ingress nginx-stable/nginx-ingress --set rbac.create=true
 kubectl get pods -A
 
 kubectl get services -A
+
+## installing NGINX Ingress Controller using minikube addon
+
+minikube addons enable ingress
