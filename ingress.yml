@@ -17,10 +17,3 @@ spec:
                 name: wordpress
                 port:
                   number: 8080
-          - pathType: Prefix
-            path: /db
-            backend:
-              service:
-                name: mariadb
-                port:
-                  number: 8080
