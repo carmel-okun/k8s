@@ -78,3 +78,33 @@ kubectl get services -A
 ## installing NGINX Ingress Controller using minikube addon
 
 minikube addons enable ingress
+
+## isntalling Prometheus
+### source: https://prometheus.io/docs/introduction/first_steps/
+
+wget https://github.com/prometheus/prometheus/releases/download/v2.54.1/prometheus-2.54.1.linux-amd64.tar.gz
+
+tar xvfz prometheus-2.54.1.linux-amd64.tar.gz
+
+cd prometheus-2.54.1.linux-amd64
+
+./prometheus --config.file=prometheus.yml
+
+### source: https://prometheus.io/docs/prometheus/latest/installation/
+
+docker pull prom/prometheus
+
+## isntalling Grafana
+### source: https://grafana.com/grafana/download
+
+sudo apt-get install -y adduser libfontconfig1 musl
+
+wget https://dl.grafana.com/enterprise/release/grafana-enterprise_11.2.0_amd64.deb
+
+sudo dpkg -i grafana-enterprise_11.2.0_amd64.deb
+
+#### or
+
+wget https://dl.grafana.com/enterprise/release/grafana-enterprise-11.2.0.linux-amd64.tar.gz
+
+tar -zxvf grafana-enterprise-11.2.0.linux-amd64.tar.gz
