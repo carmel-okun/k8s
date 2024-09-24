@@ -6,4 +6,4 @@ spec:
   selector:
     app: mariadb
   ports:
-    - port: 8080
+    - port: 3306
