@@ -18,5 +18,5 @@ spec:
       - name: wordpress
         image: public.ecr.aws/c0m6s3p2/carmel/k8s-ecr-pub:wordpress
         ports:
-          - containerPort: 8080
+          - containerPort: 80
 
